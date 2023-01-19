@@ -239,12 +239,31 @@ wait ${BACK_PID}
 echo ""
 echo "#--- Running remaining Figures and Tables"
 echo ""
+echo ""
+echo ""
+echo "Table 3 - Database overview"
 jupyter nbconvert --execute --to html --template full --log-level WARN Table3_DB_overview.ipynb
+echo ""
+echo "Figure 2 - Study locations"
 jupyter nbconvert --execute --to html --template full --log-level WARN Figure2_site_locations_Whittaker_biomes.ipynb
+echo ""
+echo "Figure 3 - Data dsitributions by category"
 jupyter nbconvert --execute --to html --template full --log-level WARN Figure3_violin_plots_categories.ipynb
+echo ""
+echo "Figure 4 - Scatter DBH, mortality cause and MAT"
 jupyter nbconvert --execute --to html --template full --log-level WARN Figure4_Scatter_DBH_Mort_cause_MAT.ipynb
+echo ""
+echo "Appendix Figure A1 - Survey duration by reference"
 jupyter nbconvert --execute --to html --template full --log-level WARN Appendix_FigureA1_survey_duration_references_plot.ipynb
+echo ""
+echo "Appendix Figure A2 & A3 - Simulated errors"
 jupyter nbconvert --execute --to html --template full --log-level WARN Appendix_FigureA2_A3_simulated_errors.ipynb
+echo ""
+echo "Appendix Figure A4 & A5 - MTFcount to MTFsize regression"
 jupyter nbconvert --execute --to html --template full --log-level WARN Appendix_FigureA4_A5_count2cmass_regression.ipynb
+echo ""
+echo "Appendix Figure B1 - Survey duration by reference"
 jupyter nbconvert --execute --to html --template full --log-level WARN Appendix_FigureB1_mortality_cause_differences.ipynb
-jupyter nbconvert --execute --to html --template full --log-level WARN Appendix_FigureB3_regression_covariates_visualisation.ipynb
+echo ""
+echo "Appendix Table A2 & Figure B3 - Visualization of covariate ranges by mortality cause"
+jupyter nbconvert --execute --to html --template full --log-level WARN Appendix_TableA2_FigureB3_regression_covariates_visualisation.ipynb

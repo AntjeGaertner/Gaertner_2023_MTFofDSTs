@@ -13113,9 +13113,9 @@ div#notebook {
 
 
 
-<div id="4136b7fe-aa44-4932-9b65-da6dcd6fbea8" class="output_subarea output_javascript ">
+<div id="4560c404-0529-4f3e-8e95-bb8996eb642d" class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#4136b7fe-aa44-4932-9b65-da6dcd6fbea8');
+var element = $('#4560c404-0529-4f3e-8e95-bb8996eb642d');
 IPython.OutputArea.prototype._should_scroll = function(lines) {
     return false;
 }
@@ -14405,10 +14405,6 @@ PFT 0.9767441860465116
   return self.resid / sigma / np.sqrt(1 - hii)
 /Users/antje/opt/anaconda3/envs/stats/lib/python3.8/site-packages/statsmodels/stats/outliers_influence.py:716: RuntimeWarning: divide by zero encountered in true_divide
   cooks_d2 *= hii / (1 - hii)
-/Users/antje/opt/anaconda3/envs/stats/lib/python3.8/site-packages/statsmodels/stats/outliers_influence.py:696: RuntimeWarning: divide by zero encountered in true_divide
-  return self.resid / sigma / np.sqrt(1 - hii)
-/Users/antje/opt/anaconda3/envs/stats/lib/python3.8/site-packages/statsmodels/stats/outliers_influence.py:716: RuntimeWarning: divide by zero encountered in true_divide
-  cooks_d2 *= hii / (1 - hii)
 </pre>
 </div>
 </div>
@@ -14443,7 +14439,11 @@ PFT 0.9767441860465116
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/Users/antje/opt/anaconda3/envs/stats/lib/python3.8/site-packages/statsmodels/stats/outliers_influence.py:696: RuntimeWarning: invalid value encountered in sqrt
+<pre>/Users/antje/opt/anaconda3/envs/stats/lib/python3.8/site-packages/statsmodels/stats/outliers_influence.py:696: RuntimeWarning: divide by zero encountered in true_divide
+  return self.resid / sigma / np.sqrt(1 - hii)
+/Users/antje/opt/anaconda3/envs/stats/lib/python3.8/site-packages/statsmodels/stats/outliers_influence.py:716: RuntimeWarning: divide by zero encountered in true_divide
+  cooks_d2 *= hii / (1 - hii)
+/Users/antje/opt/anaconda3/envs/stats/lib/python3.8/site-packages/statsmodels/stats/outliers_influence.py:696: RuntimeWarning: invalid value encountered in sqrt
   return self.resid / sigma / np.sqrt(1 - hii)
 /Users/antje/opt/anaconda3/envs/stats/lib/python3.8/site-packages/statsmodels/stats/outliers_influence.py:696: RuntimeWarning: invalid value encountered in sqrt
   return self.resid / sigma / np.sqrt(1 - hii)
