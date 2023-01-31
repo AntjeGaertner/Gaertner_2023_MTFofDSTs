@@ -266,4 +266,4 @@ echo "Appendix Figure B1 - Survey duration by reference"
 jupyter nbconvert --execute --to html --template full --log-level WARN Appendix_FigureB1_mortality_cause_differences.ipynb
 echo ""
 echo "Appendix Table A2 & Figure B3 - Visualization of covariate ranges by mortality cause"
-jupyter nbconvert --execute --to html --template full --log-level WARN Appendix_TableA2_FigureB3_regression_covariates_visualisation.ipynb
+jupyter nbconvert --execute --to html --template full --log-level WARN Appendix_FigureB3_regression_covariates_visualisation.ipynb
