@@ -2,6 +2,10 @@
 
 alpha=0.01
 
+# Create folders to store intermediary results
+mkdir spe_reg_results/
+mkdir site_reg_results/
+
 #--- Run Mortality selection for both site & species
 echo ""
 echo "#--------------------------------------------------------#"
