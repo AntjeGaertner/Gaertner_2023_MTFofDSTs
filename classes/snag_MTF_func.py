@@ -64,6 +64,7 @@ def MTF_snags(x, y, max_x, k=np.nan, plot=False, print_out=False):
         
         #-- T2
         yy = y[:-1]-y[1:] # Differences based on data only
+        xx = x[1:]-x[:-1]
         
         if plot:
             plt.bar(x[1:], yy, color='C0')
@@ -73,7 +74,11 @@ def MTF_snags(x, y, max_x, k=np.nan, plot=False, print_out=False):
             plt.xlabel('time (years)')
             plt.show()
 
-        T2=np.nansum(yy*x[1:])/np.nansum(yy)
+        #T2=np.nansum(yy*x[1:])/np.nansum(yy)
+
+        T2=sum(xx[0]*y) # sum(∆t*yi)
+        #print(xx[0])
+        
         if print_out:
             print('T2:', "%.2f"%T2)
 
